@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "prueba-fonsecantero-perez",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
