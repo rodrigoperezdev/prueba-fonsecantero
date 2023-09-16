@@ -11,8 +11,6 @@ const newsApi = async (searchTerm) => {
     const data = await resp.json();
     const { results } = data;
 
-    console.log(results);
-
     if (results && Array.isArray(results)) {
       return results.slice(0, 4);
     } else {
@@ -37,7 +35,7 @@ const news = async (searchTerm) => {
     const img = document.createElement("img");
 
     if (news.image_url == null) {
-      img.src = "../public/img/blogs/work.webp";
+      img.src = "https://prueba-fonsecantero-perez.web.app/img/blogs/work.webp";
       img.alt = news.title;
     } else {
       img.src = news.image_url;
