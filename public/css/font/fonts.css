@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Arimo";
+  src: url("./Arimo-VariableFont_wght.ttf") format("ttf");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("./WorkSans-VariableFont_wght.ttf") format("ttf");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}

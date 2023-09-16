@@ -4,47 +4,36 @@
     <meta charset="utf-8" />
     <title>Full State - Real State Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="Aquí iría la descripción de la página, mencionamos la palabra clave a posicionar."
+    />
+    <meta name="author" content="Rodrigo Pérez" />
 
     <!-- Your styles -->
     <link href="css/style.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/font/fonts.css" />
+    <meta
+      name="description"
+      content="Aquí iría la descripción de la página, mencionamos la palabra clave a posicionar."
+    />
+    <meta property="og:url" content="https://millesolutions.com" />
+    <meta property="og:site_name" content="Mille solutions" />
+    <meta
+      property="og:description"
+      content="Aquí iría la descripción de la página, mencionamos la palabra clave a posicionar."
+    />
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
   </head>
   <body>
-    <!-- Login Client -->
-    <div class="jBar">
-      <div class="container">
-        <div class="row-fluid">
-          <form>
-            <div class="span2">
-              <h1>Login Area</h1>
-            </div>
-            <div class="span4">
-              <input type="email" placeholder="Your Email" required />
-            </div>
-            <div class="span3">
-              <input type="password" placeholder="Your Password" required />
-            </div>
-            <div class="span3">
-              <input type="submit" class="botton" value="Sign in" />
-              <span>Our</span>
-              <input type="submit" class="botton" value="Register" />
-            </div>
-          </form>
-          <p class="jTrigger downarrow">Close Login</p>
-        </div>
-      </div>
-    </div>
-    <span class="jRibbon jTrigger up">Login</span>
-    <div class="line"></div>
-    <!-- End Login Client -->
+    <div id="mouse-image">:)</div>
 
     <!-- Info Head -->
-    <section class="container info_head">
-      <ul>
-        <li><i class="icon-headphones"></i> 01800034567</li>
-        <li><i class="icon-comment"></i> Live chat</li>
-        <li><i class="icon-globe"></i> Language</li>
+    <section class="container-fluid info_head">
+      <ul class="row justify-content-around d-flex">
+        <li><i class="icon-phone"></i>01800034567</li>
+        <li><i class="icon-globe"></i> Jalisco, México.</li>
+        <li><i>a</i> Language</li>
       </ul>
     </section>
     <!-- Info Head -->
@@ -52,16 +41,23 @@
     <!-- Nav-->
     <nav>
       <div class="container">
-        <div class="row-fluid">
+        <div class="row-fluid navbar-new">
           <div class="span3 logo">
-            <a href="index.html"><img src="img/logo.png" alt="Image" /></a>
+            <a href="index.html"
+              ><img src="img/logo.png" alt="Full state logo"
+            /></a>
           </div>
           <!-- Menu-->
+          <div class="nav__ham">
+            <div class="nav__ham__line1"></div>
+            <div class="nav__ham__line2"></div>
+            <div class="nav__ham__line3"></div>
+          </div>
           <ul id="menu" class="span9 sf-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">A</a></li>
             <li>
-              <a href="#">FEATURES</a>
+              <a href="#">Features</a>
               <ul>
                 <li>
                   <a href="#">Pages</a>
@@ -78,7 +74,7 @@
               </ul>
             </li>
             <li>
-              <a href="#">PROPERTIES</a>
+              <a href="#">Properties</a>
               <ul>
                 <li><a href="properties.html">Properties</a></li>
                 <li><a href="properties_two.html">Properties Two</a></li>
@@ -88,13 +84,15 @@
               </ul>
             </li>
             <li>
-              <a href="#">BLOG</a>
+              <a href="#">Blog</a>
               <ul>
                 <li><a href="blog.html">Post</a></li>
                 <li><a href="single_post.html">Single Post</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li>
+              <a href="contact.html" class="button button-secondary">Contact</a>
+            </li>
           </ul>
           <!-- End Menu-->
         </div>
@@ -106,11 +104,8 @@
     <div class="section_title about">
       <div class="container">
         <div class="row-fluid">
-          <div class="span6">
-            <h1>
-              BLOG
-              <span><a href="index.html">Home </a> / Blog</span>
-            </h1>
+          <div class="about__title">
+            <h1>Blog</h1>
           </div>
         </div>
       </div>
@@ -118,324 +113,290 @@
     <!-- End Section Title -->
 
     <!-- End content info -->
-    <section class="container content_info">
-      <!-- Newsletter Box -->
-      <div class="row-fluid">
-        <div class="newsletter_box">
-          <div class="span8">
-            <h3>
-              STAY INFORMED
+    <div class="container-fluid content-info reveal-left position-relative">
+      <div class="diamond-1"></div>
+      <div class="diamond-2"></div>
+      <section class="container-fluid content-info__container">
+        <!-- Title-->
+        <div class="titles">
+          <span>Keep informed</span>
+          <br />
+          <h2>Our latest blogs</h2>
+          <hr />
+        </div>
+        <!-- End Title-->
+        <div class="blog">
+          <div class="blog__container">
+            <div class="blog__text">
+              <div class="blog__categories">
+                <ul>
+                  <li>SEO</li>
+                  <li>Desing</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <div class="position-relative">
+                <span class="blog__text--span">Design</span>
+
+                <h2>Lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, eligendi. Explicabo ipsam atque ratione pariatur
+                  laudantium nisi doloribus, neque quisquam eveniet illum autem
+                  quo quidem. Odit eligendi recusandae esse consectetur?
+                </p>
+                <a href="" class="button btn-main">Read more</a>
+              </div>
+            </div>
+            <div class="blog__image">
               <span
-                >- Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                Lorem ipsum.</span
+                ><strong>10<br /></strong>April</span
               >
-            </h3>
+              <img src="img/blogs/seo.webp" alt="Seo positioning" />
+            </div>
           </div>
-          <div class="span4">
-            <form action="#">
-              <input type="register" placeholder="Your Mail..." required />
-              <button class="register" type="submit">
-                <i class="icon-angle-right"></i>
-              </button>
-            </form>
+          <div class="blog__container">
+            <div class="blog__text">
+              <div class="blog__categories">
+                <ul>
+                  <li>SEO</li>
+                  <li>Desing</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <div class="position-relative">
+                <span class="blog__text--span">Google</span>
+
+                <h2>Lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, eligendi. Explicabo ipsam atque ratione pariatur
+                  laudantium nisi doloribus, neque quisquam eveniet illum autem
+                  quo quidem. Odit eligendi recusandae esse consectetur?
+                </p>
+                <a href="" class="button btn-main">Read more</a>
+              </div>
+            </div>
+            <div class="blog__image">
+              <span
+                ><strong>10<br /></strong>April</span
+              >
+              <img src="img/blogs/marketing.webp" alt="Marketing agency" />
+            </div>
+          </div>
+          <div class="blog__container">
+            <div class="blog__text">
+              <div class="blog__categories">
+                <ul>
+                  <li>SEO</li>
+                  <li>Desing</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <div class="position-relative">
+                <span class="blog__text--span">Javascript</span>
+                <h2>Lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, eligendi. Explicabo ipsam atque ratione pariatur
+                  laudantium nisi doloribus, neque quisquam eveniet illum autem
+                  quo quidem. Odit eligendi recusandae esse consectetur?
+                </p>
+                <a href="" class="button btn-main">Read more</a>
+              </div>
+            </div>
+            <div class="blog__image">
+              <span
+                ><strong>10<br /></strong>April</span
+              >
+              <img src="img/blogs/design.webp" alt="Design agency" />
+            </div>
+          </div>
+          <div class="blog__container">
+            <div class="blog__text">
+              <div class="blog__categories">
+                <ul>
+                  <li>SEO</li>
+                  <li>Desing</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+              <div class="position-relative">
+                <span class="blog__text--span">Dev.ops</span>
+
+                <h2>Lorem ipsum</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, eligendi. Explicabo ipsam atque ratione pariatur
+                  laudantium nisi doloribus, neque quisquam eveniet illum autem
+                  quo quidem. Odit eligendi recusandae esse consectetur?
+                </p>
+                <a href="" class="button btn-main">Read more</a>
+              </div>
+            </div>
+            <div class="blog__image">
+              <span
+                ><strong>10<br /></strong>April</span
+              >
+              <img src="img/blogs/work.webp" alt="Blob image" />
+            </div>
           </div>
         </div>
-      </div>
-      <!-- End Newsletter Box -->
-
-      <!-- Title-->
-      <div class="titles">
-        <span>KEEP INFORMED</span>
-        <br />
-        <h1>LATEST NEWS REAL ESTATE</h1>
-      </div>
-      <!-- End Title-->
-
-      <div class="row-fluid">
-        <!-- Blog Post-->
-        <div class="span9">
-          <!-- Post-->
-          <div class="row-fluid post">
-            <div class="span7">
-              <a href="single_post.html"><h2>This is an example of post</h2></a>
-              <ul class="meta">
-                <li>Posted by:</li>
-                <li class="author"><a href="#"> Admin</a></li>
-                <li class="comments-numb">
-                  <a href="single_post.html">0 comments</a>
-                  <i class="icon-comment-alt"></i>
-                </li>
-              </ul>
-              <p>
-                Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne
-                vide omnis forensibus. Eum cetero imperdiet et. Id mutat mazim
-                quo, recusabo consequat scribentur te pro.
-              </p>
-              <a href="single_post.html" class="button">Read More</a>
-            </div>
-            <div class="span5 image_post">
-              <img src="img/blog/1.jpg" alt="Image" />
-              <ul>
-                <li>23 - Feb</li>
-                <li>
-                  <a href="#"><i class="icon-picture"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Post-->
-
-          <!-- Post-->
-          <div class="row-fluid post">
-            <div class="span7">
-              <a href="single_post.html"><h2>This is an example of post</h2></a>
-              <ul class="meta">
-                <li>Posted by:</li>
-                <li class="author"><a href="#"> Admin</a></li>
-                <li class="comments-numb">
-                  <a href="single_post.html">0 comments</a>
-                  <i class="icon-comment-alt"></i>
-                </li>
-              </ul>
-              <p>
-                Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne
-                vide omnis forensibus. Eum cetero imperdiet et. Id mutat mazim
-                quo, recusabo consequat scribentur te pro.
-              </p>
-              <a href="single_post.html" class="button">Read More</a>
-            </div>
-            <div class="span5 image_post">
-              <img src="img/blog/2.jpg" alt="Image" />
-              <ul>
-                <li>23 - Feb</li>
-                <li>
-                  <a href="#"><i class="icon-picture"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Post-->
-
-          <!-- Post-->
-          <div class="row-fluid post">
-            <div class="span7">
-              <a href="single_post.html"><h2>This is an example of post</h2></a>
-              <ul class="meta">
-                <li>Posted by:</li>
-                <li class="author"><a href="#"> Admin</a></li>
-                <li class="comments-numb">
-                  <a href="single_post.html">0 comments</a>
-                  <i class="icon-comment-alt"></i>
-                </li>
-              </ul>
-              <p>
-                Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne
-                vide omnis forensibus. Eum cetero imperdiet et. Id mutat mazim
-                quo, recusabo consequat scribentur te pro.
-              </p>
-              <a href="single_post.html" class="button">Read More</a>
-            </div>
-            <div class="span5 image_post">
-              <img src="img/blog/3.jpg" alt="Image" />
-              <ul>
-                <li>23 - Feb</li>
-                <li>
-                  <a href="#"><i class="icon-picture"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Post-->
-
-          <!-- Post-->
-          <div class="row-fluid post">
-            <div class="span7">
-              <a href="single_post.html"><h2>This is an example of post</h2></a>
-              <ul class="meta">
-                <li>Posted by:</li>
-                <li class="author"><a href="#"> Admin</a></li>
-                <li class="comments-numb">
-                  <a href="single_post.html">0 comments</a>
-                  <i class="icon-comment-alt"></i>
-                </li>
-              </ul>
-              <p>
-                Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne
-                vide omnis forensibus. Eum cetero imperdiet et. Id mutat mazim
-                quo, recusabo consequat scribentur te pro.
-              </p>
-              <a href="single_post.html" class="button">Read More</a>
-            </div>
-            <div class="span5 image_post">
-              <img src="img/blog/4.jpg" alt="Image" />
-              <ul>
-                <li>23 - Feb</li>
-                <li>
-                  <a href="#"><i class="icon-picture"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- End Post-->
-
-          <!-- Pagination-->
-          <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li class="active"><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <!-- arrow left start -->
-            <li class="arrow">
-              <a href="#">»</a>
-            </li>
-            <!-- arrow left end -->
-          </ul>
-          <!-- End Pagination-->
-        </div>
-        <!-- End Blog Post-->
-
-        <!-- Sidebars-->
-        <div class="span3">
-          <aside>
-            <h4>Blog Categories</h4>
-            <ul class="check">
-              <li><i class="icon-ok"></i><a href="#">Web Marketing</a></li>
-              <li><i class="icon-ok"></i><a href="#">Responsive Desing</a></li>
-              <li><i class="icon-ok"></i><a href="#">Reta Display</a></li>
-              <li><i class="icon-ok"></i><a href="#">HTML5</a></li>
-              <li><i class="icon-ok"></i><a href="#">Css3</a></li>
-            </ul>
-          </aside>
-
-          <aside>
-            <h4>Text Widget</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </aside>
-
-          <aside>
-            <h4>Tags</h4>
-            <ul class="tags">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Web Desing</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Internet</a></li>
-              <li><a href="#">Audio</a></li>
-              <li><a href="#">Image</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Web Desing</a></li>
-              <li><a href="#">News</a></li>
-            </ul>
-          </aside>
-        </div>
-        <!-- Sidebars-->
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- End content info-->
-
+    <!-- Newsletter Box
+    <div class="row-fluid">
+      <div class="newsletter_box">
+        <div class="span8">
+          <h3>
+            Stay informed
+            <span>Subscribe to our newsletter</span>
+          </h3>
+        </div>
+        <div class="span4">
+          <form action="#">
+            <input type="register" placeholder="Your Mail..." required />
+            <button class="register" type="submit">
+              <i class="icon-angle-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Newsletter Box -->
     <!-- Sponsors-->
+    <div class="container explicacion animate__fadeIn">
+      <div class="row">
+        <h2>A los miembros de Fonsecantero.</h2>
+        <p>
+          Esta la forma en que yo trabajaría un proyecto ya existente que
+          requiere una actualización utilizando las mismas tecnologías,
+          manteniendo el código CSS y JS y de esta forma hacerlo crecer.<br /><br />Para
+          esta página en particular yo trabajaría en algunas implementaciones
+          para buscar modernizar su entorno de trabajo, hacer mas eficiente el
+          desarrollo y adquirir algunas nuevas funcionalidades que pueden
+          incluso afectar el SEO. <br /><br />
+          Lo primero sería re-factorizar el código para cambiar nombres de
+          clases y ids de css por aquellas que estén de acuerdo a la metodología
+          BEM para hacer mas fácil el trabajo entre varios desarrolladores,
+          actualizaría la version de Bootstrap a la mas reciente ya que esta es
+          una version ya bastante antigua y tiene muchas propiedades de CSS que
+          ya se des-actualizaron lo cual puede considerarse entre otras cosas
+          una mala practica de SEO.<br /><br />
+          Por ultimo tener en cuenta todos los requerimientos de accesibilidad
+          como textos alternativos en imágenes, niveles de contraste en el texto
+          etc.
+          <br /><br />
+          La parte de noticias con el buscador la realice haciendo un fetch a
+          una API de noticias.
+          <br /><br />
+          No se si tenía tiempo limite pero como se acerca el fin de semana
+          quise hacerlo lo mas rápido posible para poderles entregar un
+          resultado a la brevedad. De verdad estoy muy interesado en el puesto,
+          soy muy buen autodidacta y me puedo adaptar a tiempos de trabajo de
+          Fonsecantero. He posicionado 2 paginas en proyectos de mas de 8 meses.
+          Logre llevarlos a los primeros puestos en Google con buenas practicas
+          de SEO y estrategias de backlinks. Las paginas son instindog.com y
+          tecfujal.mx
+          <br /><br />
+          También se <b>ReactJs</b> y puedo moverme rápido a otro framework de
+          front como vue.js. Adicionalmente estoy aprendiendo Nodejs para
+          backend.
+        </p>
+        <h4>¡Gracias!</h4>
+      </div>
+    </div>
+    <div class="news position-relative">
+      <div class="row">
+        <span id="blob">Latest news</span>
+        <p>The best news fetched by newsapi.org/</p>
+      </div>
+      <div class="form">
+        <form class="news__form">
+          <input
+            type="text"
+            placeholder="Search any news you want"
+            class="form__input"
+          />
+          <button class="button button-primary">Search</button>
+        </form>
+      </div>
+      <div class="row d-flex justify-content-around news__container"></div>
+    </div>
+
+    <!-- End Sponsors-->
+    <div class="banner">
+      <p>
+        | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us| About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us | About us |
+        About us | About us | About us | About us | About us | About us | About
+        us | About us | About us | About us | About us | About us
+      </p>
+    </div>
     <div class="sponsors">
+      <div class="container text-center">
+        <h2>Our clients</h2>
+      </div>
       <div class="container">
         <div class="row-fluid">
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/1.png" alt="Image"
+              ><img src="img/sponsors/1.png" alt="Image of x logo"
             /></a>
           </div>
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/2.png" alt="Image"
+              ><img src="img/sponsors/2.png" alt="Image of x logo"
             /></a>
           </div>
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/3.png" alt="Image"
+              ><img src="img/sponsors/3.png" alt="Image of x logo"
             /></a>
           </div>
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/4.png" alt="Image"
+              ><img src="img/sponsors/4.png" alt="Image of x logo"
             /></a>
           </div>
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/5.png" alt="Image"
+              ><img src="img/sponsors/5.png" alt="Image of x logo"
             /></a>
           </div>
           <div class="span2">
             <a href="#" class="tooltip_hover" title="Name Sponsor"
-              ><img src="img/sponsors/2.png" alt="Image"
+              ><img src="img/sponsors/2.png" alt="Image of x logo"
             /></a>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Sponsors-->
-
-    <section class="full_info">
-      <div class="container">
-        <div class="row text-center service-process">
-          <!-- Step 1 -->
-          <a href="step_1.html">
-            <div class="span3">
-              <div class="thumbnail">
-                <div class="caption-head">
-                  <em class="caption-icon icon-check icon-big"></em>
-                  <h2 class="caption-title">Register</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Step 2 -->
-          <a href="step_2.html">
-            <div class="span3">
-              <div class="thumbnail">
-                <div class="caption-head">
-                  <em class="caption-icon icon-edit icon-big"></em>
-                  <h2 class="caption-title">Publish</h2>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!-- Step 3 -->
-          <div class="span3">
-            <div class="thumbnail">
-              <div class="caption-head">
-                <em class="caption-icon icon-credit-card icon-big"></em>
-                <h2 class="caption-title">Monetize</h2>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 4 -->
-          <div class="span3">
-            <div class="thumbnail">
-              <div class="caption-head">
-                <em class="caption-icon icon-plane icon-big"></em>
-                <h2 class="caption-title">Success</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Footer area - footer_top -->
     <footer class="section_area footer_top">
       <div class="container center">
-        <h1>Get in touch</h1>
+        <h2>Get in touch</h2>
         <p>
           Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne vide
           <br />omnis forensibus. Eum cetero imperdiet et.!:
         </p>
-        <a href="#" class="button">Demo</a>
+        <form>
+          <input type="text" placeholder="Leave us a message" />
+          <a href="#" class="button button-secondary">Send</a>
+        </form>
         <br /><br />
       </div>
     </footer>
@@ -491,19 +452,6 @@
             </ul>
           </div>
           <!-- End Tags -->
-
-          <!-- Contact Footer -->
-          <div class="span3">
-            <div class="testimonials">
-              <p>
-                Lorem ipsum ea cum congue bonorum, pri no natum clita. His ne
-                vide omnis forensibus. Eum cetero imperdiet et.!
-              </p>
-              <span class="arrow_testimonials"></span>
-            </div>
-            <h6 class="testimonial_autor">Juan David Rendon - Web Desinger</h6>
-          </div>
-          <!-- End Contact Footer -->
         </div>
       </div>
     </footer>
@@ -541,24 +489,10 @@
       </div>
     </footer>
     <!-- End Footer area- footer_down -->
-    <script>
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "firebase/app";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyBXsf6Gx2d6LUsjWFQSZZ8l9LWe_0wSGfo",
-        authDomain: "prueba-fonsecantero.firebaseapp.com",
-        projectId: "prueba-fonsecantero",
-        storageBucket: "prueba-fonsecantero.appspot.com",
-        messagingSenderId: "515553103606",
-        appId: "1:515553103606:web:35dad99d914623248366d7",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/mouse.js"></script>
+    <script src="js/scrollAnimations.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
