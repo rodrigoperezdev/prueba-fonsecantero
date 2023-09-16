@@ -2712,10 +2712,9 @@ img {
   .nav__ham {
     display: block;
   }
-}
-
-#menu {
-  display: none;
+  #menu {
+    display: none;
+  }
 }
 
 .d-none {
