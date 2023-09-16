@@ -1,15 +1,23 @@
-const url = "https://newsapi.org/v2/everything?q=";
-const apiKey = "eb380e88f4db462c8f3c9d952695d563";
+const url = "https://newsdata.io/api/1/news?apikey=";
+
+const apiKey = "pub_29537744467bca166d371e800d418a83eacae";
 const form = document.querySelector(".news__form");
 const input = document.querySelector(".form__input");
 const newsContainer = document.querySelector(".news__container");
 
 const newsApi = async (searchTerm) => {
   try {
-    const resp = await fetch(`${url}${searchTerm}&apiKey=${apiKey}`);
+    const resp = await fetch(`${url}${apiKey}&q=${searchTerm}`);
     const data = await resp.json();
+    const { results } = data;
 
-    return data.articles.slice(4, 8);
+    console.log(results);
+
+    if (results && Array.isArray(results)) {
+      return results.slice(0, 4);
+    } else {
+      return results;
+    }
   } catch (error) {
     console.log(error);
   }
@@ -28,16 +36,25 @@ const news = async (searchTerm) => {
 
     const img = document.createElement("img");
 
-    img.src = news.urlToImage;
-    img.alt = news.title;
+    if (news.image_url == null) {
+      img.src = "../public/img/blogs/work.webp";
+      img.alt = news.title;
+    } else {
+      img.src = news.image_url;
+      img.alt = news.title;
+    }
 
     const textContainer = document.createElement("div");
 
     const title = document.createElement("h3");
-    title.textContent = news.title;
+    if (news.title.length > 100) {
+      title.textContent = `${news.title.slice(0, 100)}...`;
+    } else {
+      title.textContent = news.title;
+    }
 
     const author = document.createElement("p");
-    author.textContent = news.author;
+    author.textContent = `By: ${news.creator}`;
 
     textContainer.appendChild(title);
     textContainer.appendChild(author);
